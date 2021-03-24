@@ -4,26 +4,100 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BarberShop</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <!--Header-->
-    <header>
-      <nav>
-        <a href="#"> <img src="./img/Logo.svg" alt="Логотип барбершопа" /></a>
-        <ul>
-          <li><a href="#"></a>О нас</li>
-          <li><a href="#"></a>Услуги и цены</li>
-          <li><a href="#"></a>Мастера</li>
-          <li><a href="#"></a>Контакты</li>
-        </ul>
-        <a href="tel:+380441111111">+38 044 111 11 11</a>
-        <a href="#">онлайн-запись</a>
-      </nav>
-      <ul>
-        <li><a href="#">Youtube</a></li>
-        <li><a href="#">Instagram</a></li>
-      </ul>
+    <header class="page-header">
+      <div class="header-container container">
+        <a class="logo" href="#">
+          <svg class="logo__icon" width="69px" height="55px">
+            <use href="./img/sprite.svg#icon-logo"></use>
+          </svg>
+        </a>
+        <div class="desktop-nav">
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item"><a href="#"></a>О нас</li>
+              <li class="nav__item"><a href="#"></a>Услуги и цены</li>
+              <li class="nav__item"><a href="#"></a>Мастера</li>
+              <li class="nav__item"><a href="#"></a>Контакты</li>
+            </ul>
+          </nav>
+          <div class="contacts">
+            <a class="contacts__link" href="tel:+380441111111"
+              >+38 044 111 11 11</a
+            >
+            <a class="contacts__link" href="#">онлайн-запись</a>
+          </div>
+          <div class="networks">
+            <ul class="networks__list">
+              <li class="networks__item">
+                <a class="networks__link" href="#">Youtube</a>
+              </li>
+              <li class="networks__item">
+                <a class="networks__link" href="#">Instagram</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button type="button" class="menu__button">
+          <svg class="menu__icon" width="40px" height="40px">
+            <use href="./img/sprite.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <div class="backdrop">
+          <div class="mobile-menu">
+            <ul class="mobile-menu__list">
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="#">О нас</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="#">Услуги и цены</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="#">Мастера</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="#">Контакты</a>
+              </li>
+            </ul>
+
+            <ul class="mobile-contacts__list">
+              <li class="mobile-contacts__item">
+                <a href="#" class="mobile-contacts__link">+38 044 111 11 11</a>
+              </li>
+              <li class="mobile-contacts__item">
+                <a href="#" class="mobile-contacts__link">онлайн-запись</a>
+              </li>
+            </ul>
+
+            <ul class="mobile-networks">
+              <li class="mobile-networks__item">
+                <a href="#" class="mobile-networks__link">Instagram</a>
+              </li>
+              <li class="mobile-networks__item">
+                <a href="#" class="mobile-networks__link">Youtube</a>
+              </li>
+            </ul>
+
+            <button type="button" class="close-button">
+              <svg class="close-icon" width="40px" height="40px">
+                <use href="./img/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
     </header>
     <!--MAIN-->
     <main>
